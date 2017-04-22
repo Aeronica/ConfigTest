@@ -1,0 +1,14 @@
+[
+{
+  "modid": "cfgtest",
+  "name": "Config Test",
+  "description": "Configuration Test",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "authorList": ["Aeronica"],
+  "credits": "The Forge and FML Team, The Modding Community",
+  "screenshots": [],
+  "dependencies": []
+}
+]
