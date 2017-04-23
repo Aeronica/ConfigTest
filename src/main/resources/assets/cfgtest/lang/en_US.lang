@@ -1,1 +1,8 @@
 < en_US.lang - English localization file >
+
+config.cfgtest:title=Configuration Test
+config.cgftest:client.visual.disableNetherFog=Nether Fog Disable
+config.cgftest:client.visual.disableNetherFog.tooltip=Disable if fog is not wanted
+
+config.cgftest:client.visual.distanceNetherFog=Nether Fog Distance
+config.cgftest:client.visual.distanceNetherFog.tooltip=The distance between you and the fog

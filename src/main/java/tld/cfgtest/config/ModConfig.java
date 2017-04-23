@@ -16,17 +16,15 @@
 package tld.cfgtest.config;
 
 import net.minecraftforge.common.config.Config;
-import net.minecraftforge.common.config.Config.Type;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import tld.cfgtest.Main;
 import tld.cfgtest.ModLogger;
 
 @Config(modid = Main.MODID, name = "ConfigTest/ConfigTest", type = Config.Type.INSTANCE)
+@Config.LangKey("config.cfgtest:title")
 public class ModConfig
 {
 
@@ -36,16 +34,19 @@ public class ModConfig
     public static class Client
     {
         @Config.Comment("visual")
-        public static Visual visual = new Visual();
+        public Visual visual = new Visual();
 
         public static class Visual
         {
             @Config.LangKey("config.cgftest:client.visual.disableNetherFog")
-            public static boolean disableNetherFog = true;
+            public boolean disableNetherFog = true;
+            
+            @Config.LangKey("config.cgftest:client.visual.distanceNetherFog")
+            @Config.RangeInt(min= 5, max =64)
+            public int distanceNetherFog = 25;
         }
     }
     
-    @SideOnly(Side.CLIENT)
     @Mod.EventBusSubscriber
     public static class RegistrationHandler {
         
@@ -55,7 +56,7 @@ public class ModConfig
             ModLogger.info("On ConfigChanged: %s", event.getModID());
             if(event.getModID().equals(Main.MODID))
             {
-//                ConfigManager.sync(Main.MODID, Type.INSTANCE);
+                ConfigManager.sync(Main.MODID, Config.Type.INSTANCE);
             }
         }
     }
