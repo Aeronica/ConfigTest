@@ -40,7 +40,7 @@ public class ServerProxy extends CommonProxy
     @Override
     public World getWorldByDimensionId(int dimension)
     {
-        return FMLServerHandler.instance().getServer().worldServerForDimension(dimension);
+        return FMLServerHandler.instance().getServer().getWorld(dimension);
     }
     
     @Override

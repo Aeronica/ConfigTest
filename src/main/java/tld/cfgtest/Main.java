@@ -1,5 +1,6 @@
 package tld.cfgtest;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -14,6 +15,7 @@ public class Main
     public static final String MODNAME = "Config Test";
     public static final String VERSION = "{@VERSION}";
     public static final String DEPS = "";
+    public static final CreativeTabs MODTAB  = new ModTab();
     
     @Mod.Instance(MODID)
     public static Main instance;
