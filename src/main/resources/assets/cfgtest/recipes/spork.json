@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "cfgtest:spork"
+  },
+  "ingredients": [
+    {
+      "item": "#PAPER"
+    },
+    {
+      "item": "#PAPER"
+    },
+    {
+      "item": "#PAPER"
+    },
+    {
+      "item": "#PAPER"
+    },
+    {
+      "item": "#DYEBLACK"
+    }
+  ],
+  "type": "cfgtest:disablable_ore_shapeless"
+}

@@ -10,12 +10,14 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import tld.cfgtest.items.Fork;
+import tld.cfgtest.items.Spork;
 
 @SuppressWarnings("unused")
 public class ModItems
 {
     
     public static final Fork FORK = registerItem(new Fork(), "fork");
+    public static final Spork SPORK = registerItem(new Spork(), "spork");
 
     
     @Mod.EventBusSubscriber
@@ -31,6 +33,7 @@ public class ModItems
         public static void registerItems(RegistryEvent.Register<Item> event) {
             final Item[] items = {
                     FORK,
+                    SPORK,
             };
 
             final IForgeRegistry<Item> registry = event.getRegistry();

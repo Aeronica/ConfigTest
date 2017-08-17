@@ -15,7 +15,11 @@
  */
 package tld.cfgtest.crafting;
 
+import java.util.Arrays;
+
 import net.minecraft.item.ItemStack;
+import tld.cfgtest.ModLogger;
+import tld.cfgtest.config.ModConfig;
 
 public class RecipeFactoryUtils
 {
@@ -23,15 +27,12 @@ public class RecipeFactoryUtils
     public static final RecipeFactoryUtils INSTANCE = new RecipeFactoryUtils();
     private RecipeFactoryUtils() { /* Nothing to do */ }
     
-    public static boolean enabledRecipe(ItemStack stackIn)
+    public static boolean isRecipeEnabled(ItemStack stackIn)
     {
         boolean state = true;
-//        if (ModConfig.getConfigFile() != null)
-//        {
-//            String unlocalizedName = stackIn.getUnlocalizedName().replaceFirst("item\\.", "");
-//            state = Arrays.asList(ModConfig.getEnabledRecipes()).contains(unlocalizedName);
-//            ModLogger.debug("enabledRecipe? %s %s", unlocalizedName, state);
-//        }
+        String unlocalizedName = stackIn.getUnlocalizedName().replaceFirst("item\\.", "");
+        state = Arrays.asList(ModConfig.server.receipes.recipeEnables).contains(unlocalizedName);
+        ModLogger.info("isRecipeEnabled? %s %s", unlocalizedName, state);
         return state;
     }
     

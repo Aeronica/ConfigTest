@@ -45,7 +45,6 @@ public class DisablableShapelessOreRecipeFactory implements IRecipeFactory
         ItemStack result = recipe.getRecipeOutput();
         NonNullList<Ingredient> input = recipe.getIngredients();
         return new DisablableRecipe(null, input, result);
-        //return new DisablableRecipe(new ResourceLocation(MXTuneMain.MODID, "disableable_shapeless_ore_crafting"), input, result);
     }
 
     public static class DisablableRecipe extends ShapelessOreRecipe {
@@ -59,13 +58,13 @@ public class DisablableShapelessOreRecipeFactory implements IRecipeFactory
         @Nonnull
         public ItemStack getCraftingResult(InventoryCrafting var1)
         {
-            return RecipeFactoryUtils.enabledRecipe(this.output) ? this.output.copy() : ItemStack.EMPTY;
+            return RecipeFactoryUtils.isRecipeEnabled(this.output) ? this.output.copy() : ItemStack.EMPTY;
         }
 
         @Override
         public boolean isHidden()
         {
-            return !RecipeFactoryUtils.enabledRecipe(this.output);
+            return !RecipeFactoryUtils.isRecipeEnabled(this.output);
         }
     }
     

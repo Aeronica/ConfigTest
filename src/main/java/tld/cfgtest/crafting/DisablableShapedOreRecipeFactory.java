@@ -48,7 +48,6 @@ public class DisablableShapedOreRecipeFactory implements IRecipeFactory
         primer.mirrored = JsonUtils.getBoolean(json, "mirrored", true);
         primer.input = recipe.getIngredients();
         return new DisablableRecipe(null, recipe.getRecipeOutput(), primer); 
-        //return new DisablableRecipe(new ResourceLocation(MXTuneMain.MODID, "disableable_shaped_ore_crafting"), recipe.getRecipeOutput(), primer); 
     }
 
     public static class DisablableRecipe extends ShapedOreRecipe {
@@ -62,13 +61,13 @@ public class DisablableShapedOreRecipeFactory implements IRecipeFactory
         @Nonnull
         public ItemStack getCraftingResult(@Nonnull InventoryCrafting var1)
         {
-            return RecipeFactoryUtils.enabledRecipe(this.output) ? this.output.copy() : ItemStack.EMPTY;
+            return RecipeFactoryUtils.isRecipeEnabled(this.output) ? this.output.copy() : ItemStack.EMPTY;
         }
 
         @Override
         public boolean isHidden()
         {
-            return !RecipeFactoryUtils.enabledRecipe(this.output.copy());
+            return !RecipeFactoryUtils.isRecipeEnabled(this.output);
         }                
     }
 

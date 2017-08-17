@@ -27,26 +27,24 @@ import tld.cfgtest.ModLogger;
 @Config.LangKey("config.cfgtest:title")
 public class ModConfig
 {
-
-    @Config.Comment("client")
-    public static Client client = new Client();
     
-    public static class Client
+    @Config.Comment("Server Configuration Options")
+    public static Server server = new Server();
+    
+    public static class Server
     {
-        @Config.Comment("visual")
-        public Visual visual = new Visual();
+        @Config.Comment({"Enabled Recipes", "Requires a Server Restart!"})
+        public Recipes receipes = new Recipes();
 
-        public static class Visual
-        {
-            @Config.LangKey("config.cgftest:client.visual.disableNetherFog")
-            public boolean disableNetherFog = true;
-            
-            @Config.LangKey("config.cgftest:client.visual.distanceNetherFog")
-            @Config.RangeInt(min= 5, max =64)
-            public int distanceNetherFog = 25;
+        public static class Recipes
+        {      
+            @Config.Name("Recipe Enables")
+            @Config.RequiresMcRestart
+            @Config.LangKey("config.cgftest:general.enabled_recipes")
+            public String[] recipeEnables = {"cfgtest:fork", "cfgtest:spork"};
         }
     }
-    
+
     @Mod.EventBusSubscriber
     public static class RegistrationHandler {
         

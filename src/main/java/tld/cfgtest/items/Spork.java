@@ -31,10 +31,10 @@ import tld.cfgtest.Main;
 import tld.cfgtest.ModLogger;
 
 
-public class Fork extends Item
+public class Spork extends Item
 {
     
-    public Fork()
+    public Spork()
     {
         setMaxStackSize(1);
         setHasSubtypes(false);
@@ -59,7 +59,7 @@ public class Fork extends Item
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn)
     {
-        tooltip.add(TextFormatting.YELLOW + I18n.format("item.cfgtest:fork.help"));
+        tooltip.add(TextFormatting.YELLOW + I18n.format("item.cfgtest:spork.help"));
     }
 
 }

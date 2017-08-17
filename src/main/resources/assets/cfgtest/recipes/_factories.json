@@ -1,0 +1,7 @@
+
+{
+  "recipes": {
+    "disablable_ore_shaped": "tld.cfgtest.crafting.DisablableShapedOreRecipeFactory",
+    "disablable_ore_shapeless": "tld.cfgtest.crafting.DisablableShapelessOreRecipeFactory"
+  }    
+}

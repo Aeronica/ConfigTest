@@ -1,6 +1,14 @@
 < en_US.lang - English localization file >
+item.cfgtest:fork.name=Fork
+item.cfgtest:fork.help=Not a food utensil!
+item.cfgtest:spork.name=Spork
+item.cfgtest:spork.help=What is it?
 
 config.cfgtest:title=Configuration Test
+
+config.cgftest:general.enabled_recipes=Recipe Enables
+config.cgftest:general.enabled_recipes.tooltip=To disable an entry either remove it or append _off 
+
 config.cgftest:client.visual.disableNetherFog=Nether Fog Disable
 config.cgftest:client.visual.disableNetherFog.tooltip=Disable if fog is not wanted
 
