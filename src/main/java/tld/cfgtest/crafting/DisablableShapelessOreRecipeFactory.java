@@ -51,7 +51,8 @@ public class DisablableShapelessOreRecipeFactory implements IRecipeFactory
         
         ItemStack result = recipe.getRecipeOutput();
         NonNullList<Ingredient> input = recipe.getIngredients();
-        return new DisablableRecipe(null, input, result);
+        ResourceLocation group = recipe.getGroup().isEmpty() ? null : new ResourceLocation(recipe.getGroup());
+        return new DisablableRecipe(group, input, result);
     }
 
     public static class DisablableRecipe extends ShapelessOreRecipe {
