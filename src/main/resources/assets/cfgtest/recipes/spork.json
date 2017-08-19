@@ -4,19 +4,19 @@
   },
   "ingredients": [
     {
-      "item": "#PAPER"
+      "item": "#BONE"
     },
     {
-      "item": "#PAPER"
+      "item": "#BONE"
     },
     {
-      "item": "#PAPER"
+      "item": "#BONE"
     },
     {
-      "item": "#PAPER"
+      "item": "#BONE"
     },
     {
-      "item": "#DYEBLACK"
+      "item": "#INGOTIRON"
     }
   ],
   "type": "cfgtest:disablable_ore_shapeless"

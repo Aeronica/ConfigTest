@@ -3,9 +3,9 @@
     "item": "cfgtest:fork"
   },
   "pattern": [
-    " P ",
-    " P ",
-    "PIP"
+    "I I",
+    " I ",
+    " P "
   ],
   "type": "cfgtest:disablable_ore_shaped",
   "key": {
