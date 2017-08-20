@@ -1,0 +1,40 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "title": {
+            "translate": "advancements.cfgtest:music.all_the_stuff.title"
+        },
+        "description": {
+            "translate": "advancements.cfgtest:music.all_the_stuff.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "cfgtest:cfgtest/get_sporked",
+    "rewards": {
+        "experience": 1000
+    },
+    "criteria": {
+        "get_forked": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "cfgtest:fork"
+                    }
+                ]
+            }
+        },
+        "get_sporked": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "cfgtest:spork"
+                    }
+                ]
+            }
+        }                                                 
+    }   
+}

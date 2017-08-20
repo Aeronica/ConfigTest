@@ -86,9 +86,9 @@
   {
     "ingredient": {
       "type": "forge:ore_dict",
-      "ore": "string"
+      "ore": "dirt"
     },
-    "name": "STRING"
+    "name": "DIRT"
   },
   {
     "ingredient": {

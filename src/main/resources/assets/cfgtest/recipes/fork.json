@@ -3,8 +3,8 @@
     "item": "cfgtest:fork"
   },
   "pattern": [
-    "I I",
-    " I ",
+    "D D",
+    " D ",
     " P "
   ],
   "type": "cfgtest:disablable_ore_shaped",
@@ -12,8 +12,8 @@
     "P": {
       "item": "#PLANKWOOD"
     },
-    "I": {
-      "item": "#INGOTIRON"
+    "D": {
+      "item": "#DIRT"
     }
   }
 }

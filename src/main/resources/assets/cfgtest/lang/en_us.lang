@@ -1,4 +1,11 @@
 < en_US.lang - English localization file >
+advancements.cfgtest:music.root.title=Config Test
+advancements.cfgtest:music.root.description=Forks for All!?
+advancements.cfgtest:music.get_sporked.title=...and Sporks too!?
+advancements.cfgtest:music.get_sporked.description=Don't ask, just enjoy the moment.
+advancements.cfgtest:music.all_the_stuff.title=Crafted Both!?
+advancements.cfgtest:music.all_the_stuff.description=So talented you are :D
+
 item.cfgtest:fork.name=Fork
 item.cfgtest:fork.help=Not a food utensil!
 item.cfgtest:spork.name=Spork

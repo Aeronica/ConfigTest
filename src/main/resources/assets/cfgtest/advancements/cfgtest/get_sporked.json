@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "cfgtest:spork"
+        },
+        "title": {
+            "translate": "advancements.cfgtest:music.get_sporked.title"
+        },
+        "description": {
+            "translate": "advancements.cfgtest:music.get_sporked.description"
+        }
+    },
+    "parent": "cfgtest:cfgtest/root",
+    "criteria": {
+        "get_black_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "cfgtest:fork"
+                    }
+                ]
+            }
+        }
+    }
+}

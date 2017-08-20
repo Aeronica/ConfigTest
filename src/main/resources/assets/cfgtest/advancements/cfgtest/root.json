@@ -1,0 +1,31 @@
+{
+    "display":
+    {
+        "icon": {
+            "item": "cfgtest:fork"
+        },
+        "title": {
+            "translate": "advancements.cfgtest:music.root.title"
+        },
+        "description": {
+            "translate": "advancements.cfgtest:music.root.description"
+        },
+        "background": "cfgtest:textures/gui/advancements/backgrounds/cfgtest.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria":
+    {
+        "needs_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "type": "forge:ore_dict",
+                        "ore": "plankWood"
+                    }
+                ]
+            }
+        }
+    }
+}

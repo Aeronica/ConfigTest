@@ -4,19 +4,19 @@
   },
   "ingredients": [
     {
-      "item": "#BONE"
+      "item": "#DIRT"
     },
     {
-      "item": "#BONE"
+      "item": "#DIRT"
     },
     {
-      "item": "#BONE"
+      "item": "#DIRT"
     },
     {
-      "item": "#BONE"
+      "item": "#DIRT"
     },
     {
-      "item": "#INGOTIRON"
+      "item": "#PLANKWOOD"
     }
   ],
   "type": "cfgtest:disablable_ore_shapeless"
