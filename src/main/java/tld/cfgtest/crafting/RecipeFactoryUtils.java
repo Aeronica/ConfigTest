@@ -32,15 +32,14 @@ public class RecipeFactoryUtils
 {
 
     public static final RecipeFactoryUtils INSTANCE = new RecipeFactoryUtils();
-    private RecipeFactoryUtils() { /* Nothing to do */ }
+    private RecipeFactoryUtils() { /* NOP */ }
     
     public static boolean isRecipeEnabled(ItemStack stackIn)
     {
-        boolean state = true;
         String unlocalizedName = stackIn.getUnlocalizedName().replaceFirst("item\\.", "");
-        state = Arrays.asList(ModConfig.server.receipes.recipeEnables).contains(unlocalizedName);
-        ModLogger.info("isRecipeEnabled? %s %s", unlocalizedName, state);
-        return state;
+        boolean enableState = Arrays.asList(ModConfig.server.receipes.recipeEnables).contains(unlocalizedName);
+        ModLogger.info("isRecipeEnabled? %s %s", unlocalizedName, enableState);
+        return enableState;
     }
     
 }
