@@ -35,6 +35,7 @@ import net.minecraftforge.common.crafting.CraftingHelper.ShapedPrimer;
 import net.minecraftforge.common.crafting.IRecipeFactory;
 import net.minecraftforge.common.crafting.JsonContext;
 import net.minecraftforge.oredict.ShapedOreRecipe;
+import tld.cfgtest.config.ModConfig;
 
 /**
  * Disableable Shaped Ore Recipe
@@ -69,13 +70,13 @@ public class DisablableShapedOreRecipeFactory implements IRecipeFactory
         @Nonnull
         public ItemStack getCraftingResult(@Nonnull InventoryCrafting var1)
         {
-            return RecipeFactoryUtils.isRecipeEnabled(this.output) ? this.output.copy() : ItemStack.EMPTY;
+            return ModConfig.isRecipeEnabled(this.output) ? this.output.copy() : ItemStack.EMPTY;
         }
 
         @Override
         public boolean isHidden()
         {
-            return !RecipeFactoryUtils.isRecipeEnabled(this.output);
+            return ModConfig.isRecipeHidden(this.output);
         }                
     }
 

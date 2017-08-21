@@ -5,10 +5,10 @@
             "item": "cfgtest:fork"
         },
         "title": {
-            "translate": "advancements.cfgtest:music.root.title"
+            "translate": "advancements.cfgtest:root.title"
         },
         "description": {
-            "translate": "advancements.cfgtest:music.root.description"
+            "translate": "advancements.cfgtest:root.description"
         },
         "background": "cfgtest:textures/gui/advancements/backgrounds/cfgtest.png",
         "show_toast": false,

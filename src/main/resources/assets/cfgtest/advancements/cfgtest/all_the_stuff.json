@@ -4,16 +4,16 @@
             "item": "minecraft:diamond"
         },
         "title": {
-            "translate": "advancements.cfgtest:music.all_the_stuff.title"
+            "translate": "advancements.cfgtest:root.all_the_stuff.title"
         },
         "description": {
-            "translate": "advancements.cfgtest:music.all_the_stuff.description"
+            "translate": "advancements.cfgtest:root.all_the_stuff.description"
         },
         "frame": "challenge"
     },
     "parent": "cfgtest:cfgtest/get_sporked",
     "rewards": {
-        "experience": 1000
+        "experience": 10000
     },
     "criteria": {
         "get_forked": {

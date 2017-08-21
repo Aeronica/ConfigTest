@@ -1,23 +1,19 @@
 < en_US.lang - English localization file >
-advancements.cfgtest:music.root.title=Config Test
-advancements.cfgtest:music.root.description=Forks for All!?
-advancements.cfgtest:music.get_sporked.title=...and Sporks too!?
-advancements.cfgtest:music.get_sporked.description=Don't ask, just enjoy the moment.
-advancements.cfgtest:music.all_the_stuff.title=Crafted Both!?
-advancements.cfgtest:music.all_the_stuff.description=So talented you are :D
+advancements.cfgtest:root.title=Config Test
+advancements.cfgtest:root.description=Forks for All!?
+advancements.cfgtest:root.get_sporked.title=...and Sporks too!?
+advancements.cfgtest:root.get_sporked.description=Don't ask, just enjoy the moment.
+advancements.cfgtest:root.all_the_stuff.title=Crafted Both!?
+advancements.cfgtest:root.all_the_stuff.description=So talented you are :D
 
 item.cfgtest:fork.name=Fork
 item.cfgtest:fork.help=Not a food utensil!
 item.cfgtest:spork.name=Spork
 item.cfgtest:spork.help=What is it?
 
-config.cfgtest:title=Configuration Test
-
-config.cgftest:general.enabled_recipes=Recipe Enables
-config.cgftest:general.enabled_recipes.tooltip=To disable an entry either remove it or append _off 
-
-config.cgftest:client.visual.disableNetherFog=Nether Fog Disable
-config.cgftest:client.visual.disableNetherFog.tooltip=Disable if fog is not wanted
-
-config.cgftest:client.visual.distanceNetherFog=Nether Fog Distance
-config.cgftest:client.visual.distanceNetherFog.tooltip=The distance between you and the fog
+config.cgftest:recipes=Recipes
+config.cgftest:recipes.tooltip=Recipes can be disabled by setting them to false.
+config.cfgtest:maps=Maps
+config.cfgtest:maps.tooltip=Copied direct from Forge
+config.cfgtest:annotations=Annotations
+config.cfgtest:annotations.tooltip=Copied direct from Forge

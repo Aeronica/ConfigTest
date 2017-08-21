@@ -4,15 +4,15 @@
             "item": "cfgtest:spork"
         },
         "title": {
-            "translate": "advancements.cfgtest:music.get_sporked.title"
+            "translate": "advancements.cfgtest:root.get_sporked.title"
         },
         "description": {
-            "translate": "advancements.cfgtest:music.get_sporked.description"
+            "translate": "advancements.cfgtest:root.get_sporked.description"
         }
     },
     "parent": "cfgtest:cfgtest/root",
     "criteria": {
-        "get_black_dye": {
+        "get_fork": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [

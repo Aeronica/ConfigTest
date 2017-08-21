@@ -12,13 +12,13 @@
         "recipe": "cfgtest:spork"
       }
     },
-    "has_planks": {
+    "has_dirt": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "type": "forge:ore_dict",
-            "ore": "plankWood"
+            "ore": "dirt"
           }
         ]
       }
@@ -27,7 +27,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_planks"
+      "has_dirt"
     ]
   ]
 }

@@ -35,6 +35,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.crafting.IRecipeFactory;
 import net.minecraftforge.common.crafting.JsonContext;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
+import tld.cfgtest.config.ModConfig;
 
 /**
  * Disableable Shapeless Ore Recipe
@@ -66,13 +67,13 @@ public class DisablableShapelessOreRecipeFactory implements IRecipeFactory
         @Nonnull
         public ItemStack getCraftingResult(InventoryCrafting var1)
         {
-            return RecipeFactoryUtils.isRecipeEnabled(this.output) ? this.output.copy() : ItemStack.EMPTY;
+            return ModConfig.isRecipeEnabled(this.output) ? this.output.copy() : ItemStack.EMPTY;
         }
 
         @Override
         public boolean isHidden()
         {
-            return !RecipeFactoryUtils.isRecipeEnabled(this.output);
+            return ModConfig.isRecipeHidden(this.output);
         }
     }
     
