@@ -112,10 +112,15 @@ public class ModConfig
         @Config.Comment("Category Comment Test")
         public static NestedType Inner = new NestedType();
 
+        @Config.Comment("Enumerated Values")
+        public static LATIN latin = LATIN.BETA;
+        
         public static class NestedType
         {
             public String HeyLook = "Go in!";
         }
+        
+        public enum LATIN { ALPHA, BETA, GAMMA; }
     }
     
     /**
